@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Palanquin+Dark');
+//colors
+$yellow: #eded44;
+$white: #fff;
+$lightblue: #c9f5fe;
+$sapfir: #48c9ef;
+$blue: #2a87dd;
+$darkblue: #010e3b;
+//breakpoints
+$breakpoints: (
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px
+) !default;
+//font
+$main-font: 'Roboto', sans-serif;
+$second-font: 'Palanquin Dark', sans-serif;;

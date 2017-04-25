@@ -1,0 +1,195 @@
+.header {
+    position: relative;
+    &__top-line {
+        width: 100%;
+        padding: 1rem;
+        display: -webkit-inline-flex;
+        display: -moz-inline-flex;
+        display: -ms-inline-flex;
+        display: -o-inline-flex;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        z-index: 100;
+    } //top_line header
+    &__logo-wrapper {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        img {
+            width: 100%;
+            display: block;
+        } //img
+    } //wrapper-navigation
+    &__nav {
+        .nav {
+            &__list {
+                display: flex;
+                a {
+                    display: block;
+                    span {
+                        padding: 1rem 1.5rem;
+                        font-size: 1.3rem;
+                        font-weight: 400;
+                        color: $white;
+                        text-shadow: 0 0 1px $darkblue;
+                    } //span
+                } //a
+            } //nav__list
+        } //nav
+    } //__topLine
+    &__carusel {
+        position: relative;
+        .arrow-svg {
+            position: absolute;
+            z-index: 2000;
+            // top: 50%;
+            top: 80%;
+            fill: $blue;
+            width: 100%;
+            cursor: pointer;
+            color: rgba($blue, .3);
+            .right {
+                position: absolute;
+                right: 1rem;
+                transform: scaleX(2);
+            }
+            .left {
+                left: 1rem;
+                position: absolute;
+                transform: scaleX(2);
+            }
+        }
+        .owl-carousel {
+            position: relative;
+            &__item {
+                width: 100%;
+                height: 700px;
+                padding-top: 100px;
+                background-color: silver;
+                position: relative;
+                background: {
+                    repeat: no-repeat;
+                    size: cover;
+                    position: center;
+                }
+                &-overly {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($darkblue, .4);
+                    background-image: linear-gradient( rgba(0, 0, 0, 0), $darkblue 90%);
+                } //overlay
+            } //item
+            .slide_1 {
+                background: {
+                    image: url('../../img/sloder.jpg');
+                } //slide bg1
+            } //slide 1
+            .slide_2 {
+                background: {
+                    image: url('../../img/slide2.jpg');
+                } //slide bg2
+            } //slide 2
+            .slide_3 {
+                background: {
+                    image: url('../../img/slide2.jpg');
+                } //slide bg2
+            } //slide 2
+            .slide_4 {
+                background: {
+                    image: url('../../img/slide2.jpg');
+                } //slide bg2
+            } //slide 2
+        } //carusel wrapper
+    } //carusel
+} //header
+.header-wave {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 100;
+    @include breakpoint('small') {
+    	height: 20px;
+    	bottom: -10px;
+    }
+}
+
+.carusel-content {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+    transition: opacity 3s linear;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1rem;
+        // border-top: 4px solid $blue;
+        // border-bottom: 4px solid $blue;
+        position: relative;
+        margin-right: 6rem;
+        margin-left: 6rem;
+    }
+    &__header {
+        font-size: 2.5rem;
+        letter-spacing: .01rem;
+        font-weight: 700;
+        margin: .5rem 0;
+        text-shadow: 0 0 1px $darkblue;
+        position: relative;
+        align-self: flex-start;
+    }
+    &__description {
+        font-size: 1.5rem;
+        margin: .5rem 0;
+        text-shadow: 0 0 1px $darkblue;
+    }
+    &__btn {
+        margin: 1rem 0;
+        padding: .8rem 1.6rem;
+        align-self: flex-start;
+        border-radius: 10px;
+        border: none;
+        color: $white;
+        font-weight: 700;
+        letter-spacing: .1rem;
+        background-color: $blue;
+        text-shadow: 0 0 1px $darkblue;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}
+
+//border style
+.top-border {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-top: 1px solid $blue;
+    border-left: 1px solid $blue;
+}
+
+.bottom-border {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    border-right: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+}

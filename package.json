@@ -1,0 +1,19 @@
+{
+  "name": "surfing_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PashaSchool/surfing_wave.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PashaSchool/surfing_wave/issues"
+  },
+  "homepage": "https://github.com/PashaSchool/surfing_wave#readme"
+}
