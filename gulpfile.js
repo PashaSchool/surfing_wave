@@ -10,7 +10,7 @@ var sassDir = ['./sass/style.scss'],
 
 gulp.task('sass', function() {
     return gulp.src(sassDir)
-        .pipe(sass({outputStyle: 'compact'})
+        .pipe(sass({outputStyle: 'nested'})
         .on('error', function(err) {
             notify().write(err);
             this.emit('end');
