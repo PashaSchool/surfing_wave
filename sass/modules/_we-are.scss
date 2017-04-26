@@ -1,0 +1,111 @@
+.our-benefit {
+    width: 100%;
+    background-color: $sapfir;
+    position: relative;
+    padding: 3rem 0.5rem;
+    .header-wave {
+        top: -20px;
+    }
+    .header-wave.bottom {
+        top: 100%;
+        margin-top: -20px;
+
+    }
+    &__container {}
+    &__header {
+        display: block;
+        font-weight: 700;
+        color: $darkblue;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__content {
+        padding: 2rem 4rem;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: .75rem;
+            z-index: -1;
+            background-color: rgba($darkblue, .1);
+        }
+    }
+    &__item {
+        flex-basis: 6.25rem;
+        padding: 0 0.5rem 0.5rem .5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    &__number {
+        display: flex;
+        justify-content: center;
+        span {
+            display: block;
+            border-radius: 100%;
+            padding: .35rem;
+            text-align: center;
+            background-color: $blue;
+            font-size: 1rem;
+            width: 1.7rem;
+            height: 1.7rem;
+            color: $white;
+            font-weight: 700;
+        }
+    }
+}
+
+.benefit-wrapper {
+    margin-top: 3rem;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 3rem;
+        top: -3rem;
+        left: 50%;
+        background-color: rgba($darkblue, .1);
+    }
+    &__circle {
+    	width: 6rem;
+    	height: 6rem;
+    	background-color: $blue;
+    	border-radius: 100%;
+    	padding: 0.125rem;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    }
+    &__icon {
+    	font-size: 2rem;
+        color: $white;
+    }
+    &__footer{
+        color: $darkblue;
+    }
+    &__name {
+    	text-align: center;
+    	padding: .5rem 0.2rem;
+    	font-weight: 700;
+        border-bottom: 1px solid rgba($darkblue, .1);
+    }
+    &__descr {
+    	text-align: center;
+    	padding: .2rem 0;
+        font-weight: 400;
+        color: rgba($darkblue, .8);
+        font-size: .8rem;
+    }
+
+}

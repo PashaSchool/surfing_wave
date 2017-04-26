@@ -1,0 +1,29 @@
+.how-we-roll {
+	padding: 6rem 0;
+    position: relative;
+    &__content {
+
+    }
+    &__header {
+        display: block;
+        font-weight: 700;
+        color: $darkblue;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.timeline{
+	padding-top: 6rem;
+	&__events{}
+	&-event{
+		width: 100%;
+		&__box {
+			width: 50%;
+			min-width: 300px;
+			background-color: red;
+			height: 100px;
+		}
+	}
+}

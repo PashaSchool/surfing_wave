@@ -49,7 +49,7 @@
             fill: $blue;
             width: 100%;
             cursor: pointer;
-            color: rgba($blue, .3);
+            color: rgba($darkblue, .3);
             .right {
                 position: absolute;
                 right: 1rem;
@@ -67,7 +67,6 @@
                 width: 100%;
                 height: 700px;
                 padding-top: 100px;
-                background-color: silver;
                 position: relative;
                 background: {
                     repeat: no-repeat;
@@ -80,8 +79,8 @@
                     right: 0;
                     width: 100%;
                     height: 100%;
-                    background-color: rgba($darkblue, .4);
-                    background-image: linear-gradient( rgba(0, 0, 0, 0), $darkblue 90%);
+                    background-color: rgba($darkblue, .2);
+                    background-image: linear-gradient( rgba(0, 0, 0, 0.1), $darkblue 90%);
                 } //overlay
             } //item
             .slide_1 {
@@ -123,7 +122,7 @@
 .carusel-content {
     width: 100%;
     height: 100%;
-    color: white;
+    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,8 +134,6 @@
         flex-direction: column;
         flex-wrap: wrap;
         padding: 1rem;
-        // border-top: 4px solid $blue;
-        // border-bottom: 4px solid $blue;
         position: relative;
         margin-right: 6rem;
         margin-left: 6rem;
