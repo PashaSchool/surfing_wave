@@ -44,7 +44,7 @@
                 </div>
                 <div class='left' id="prev"><i class="fa  fa-long-arrow-left"></i></div>
             </div>
-            <div class="owl-carousel">
+            <div class="owl-carousel header">
                 <div class="owl-carousel__item slide_1">
                     <div class="owl-carousel__item-overly">
                         <div class="carusel-content">
@@ -305,76 +305,147 @@
     </section>
     <section class="how-we-roll">
         <div class="how-we-roll__header"><span>Начать легко</span></div>
-        <div class="timeline__content">
-            <!-- here will be svg -->
-            <div class="timeline">
+        <div class="timeline__content" id='scroll-container'>
+            <svg id='svg-event-line'>
+                <path class='event-path' d='M 148, 15 l 0, 20 l -20 4 l 40 4 l -30 5 l 10 3 v90 l -20 0 l 20 30 l 20 -30 l -10 0'></path>
+                <path class='event-path' id='draw' d='M 148, 15 l 0, 20 l -20 4 l 40 4 l -30 5 l 10 3 v90 l -20 0 l 20 30 l 20 -30 l -10 0'></path>
+                <circle cx='147.5' cy='20' r='5'></circle>
+            </svg>
+            <div class="timeline" id='tl_container'>
                 <div class="timeline__events">
                     <div class="timeline-event">
                         <div class="timeline-event__box">
                             <div class="timeline-event__box-header">
-                                header
+                                <span>Обучение серфингу</span>
                             </div>
                             <div class="timeline-event__box-body">
-                                body
+                                в нашей школе серфинга проходит на бесплатных пляжах и с хорошей качественной экепировкой.
                             </div>
                         </div>
                     </div>
                     <div class="timeline-event">
                         <div class="timeline-event__box right-box">
                             <div class="timeline-event__box-header">
-                                header
+                                <span>Процесс обучения серфингу</span>
                             </div>
                             <div class="timeline-event__box-body">
-                                body
+                                Он, выстроен специально, чтобы дать нашим ученикам необходимый объем качественных знаний, навыков для серфинга и научить его не просто “вставать на доску”, а кататься самостоятельно , разбираться в ситуации на волне, читать волну, правильно выбирать места и условия катания, выполнять повороты и многое другое. Необходимо быть всегда на чеку, обладать определенным набором теоретических знаний и практических навыков.
                             </div>
                         </div>
                     </div>
                     <div class="timeline-event">
                         <div class="timeline-event__box">
                             <div class="timeline-event__box-header">
-                                header
+                                <span>Серфинг программа</span>
                             </div>
                             <div class="timeline-event__box-body">
-                                body
+                                В нашей школе серфинга меняется и адаптируется в зависимости от ваших навыков и прогресса. Обучение серфингу – Начинается с того, что ученики прослушиваю теорию затем практикуются на берегу, работают над своими ошибками, а главное, что они всегда под присмотром опытного инструктора.
                             </div>
                         </div>
                     </div>
                     <div class="timeline-event">
                         <div class="timeline-event__box right-box">
                             <div class="timeline-event__box-header">
-                                header
+                                <span>Безопасность в серфинге</span>
                             </div>
                             <div class="timeline-event__box-body">
-                                body
+                                очень важна. Для безопасного катания. Наша школа уделяет большое внимание безопасности и каждый серфинг инструктор в Golden Wave имеет сертификат спасателя.
                             </div>
                         </div>
                     </div>
                     <div class="timeline-event">
                         <div class="timeline-event__box">
                             <div class="timeline-event__box-header">
-                                header
+                                <span>Cерфинг фото</span>
                             </div>
                             <div class="timeline-event__box-body">
-                                body
+                                школа серфинга Golden Wave Surf School предлагает профессиональную серф фотосессию, фото и видео съёмку вашего прогресса, огромный выбор различных курсов, пакетов.
                             </div>
                         </div>
                     </div>
                     <div class="timeline-event">
                         <div class="timeline-event__box right-box">
                             <div class="timeline-event__box-header">
-                                header
+                                <span>Сезон серфинга</span>
                             </div>
                             <div class="timeline-event__box-body">
-                                body
+                                в Калифорнии сезон серфинга 365 дней в году и волны для серфинга есть всегда, и для лонг борда и для шорт борда.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="quote">
+            <div class="quote__content">
+                <div class="quote__border">
+                    <span>Не нужно ничего бояться. Сделайте шаг на встречу вашему счастью и новым эмоциям: ведь освоить серфинг не так сложно, как может показаться на первый взгляд, позвоните нам и мы вам это докажем!</span>
+                    <button class='quote__btn'>зделать звонок</button>
+                </div>
+            </div>
+        </div>
+        <svg class='header-wave' viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 50 Q 25 150, 50 50" stroke="transparent" fill="#fff" />
+            <path d="M50 50 Q 75 -50, 100 50" stroke="transparent" fill="#c9f5fe" />
+        </svg>
+    </section>
+    <section class="section-clients">
+        <article class="gallery">
+            <div class="gallery__header">
+                <span>gallery</span>
+            </div>
+            <div class="gallery__wrapper">
+                <div class="grid">
+                    <div class="img-1 grid-sizer"></div>
+                    <div class="img-2 grid-item grid-item--height2"></div>
+                    <div class="img-3 grid-item grid-item--width2 grid-item--height3"></div>
+                    <div class="img-4 grid-item grid-item--height3"></div>
+                    <div class="img-5 grid-item grid-item--height2"></div>
+                    <div class="img-6 grid-item grid-item--width3 grid-item--height2"></div>
+                    <div class="img-7 grid-item grid-item--height2"></div>
+                    <div class="img-8 grid-item"></div>
+                    <div class="img-9 grid-item grid-item--height2"></div>
+                    <div class="img-10 grid-item grid-item--width2 grid-item--height3"></div>
+                    <div class="img-11 grid-item"></div>
+                    <div class="img-12 grid-item grid-item--height2"></div>
+                    <div class="img-13 grid-item"></div>
+                    <div class="img-14 grid-item grid-item--width2 grid-item--height2"></div>
+                    <div class="img-15 grid-item grid-item--width2"></div>
+                    <div class="img-16 grid-item"></div>
+                    <div class="img-17 grid-item grid-item--height2"></div>
+                </div>
+            </div>
+        </article>
+        <article class="video v-frame">
+            <div class="video__header">video</div>
+            <div class="relation">
+                <div class="relation__ration"></div>
+                <iframe class="relation__content" src="https://www.youtube.com/embed/b6hoBp7Hk-A?ecver=1" allowfullscreen></iframe>
+            </div>
+        </article>
+        <article class="comments-wrapper">
+        <div class="comments-wrapper__header">
+        	<span>feedback</span>
+        </div>
+			<div class="owl-carousel client-comments">
+			    <div class="item"><h4>1</h4></div>
+			    <div class="item"><h4>2</h4></div>
+			    <div class="item"><h4>3</h4></div>
+			    <div class="item"><h4>4</h4></div>
+			    <div class="item"><h4>5</h4></div>
+			    <div class="item"><h4>6</h4></div>
+			    <div class="item"><h4>7</h4></div>
+			    <div class="item"><h4>8</h4></div>
+			    <div class="item"><h4>9</h4></div>
+			    <div class="item"><h4>10</h4></div>
+			    <div class="item"><h4>11</h4></div>
+			    <div class="item"><h4>12</h4></div>
+			</div>
+        </article>
     </section>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+    <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js"></script> -->
     <!-- <script src="bower_components/tweenlite/TweenLite.min.js"></script> -->
     <script src="js/main.js"></script>

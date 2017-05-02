@@ -44,12 +44,10 @@
         .arrow-svg {
             position: absolute;
             z-index: 2000;
-            // top: 50%;
             top: 80%;
-            fill: $blue;
             width: 100%;
             cursor: pointer;
-            color: rgba($darkblue, .3);
+            color: $blue;
             .right {
                 position: absolute;
                 right: 1rem;
