@@ -1,0 +1,76 @@
+.subscribe-now {
+    position: relative;
+    background-color: $sapfir;
+    padding: 4rem;
+}
+
+.quote {
+    width: 100%;
+    display: flex;
+    &__header {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        color: $darkblue;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+        &:after,
+        &:before {
+            content: '';
+            position: relative;
+            height: 1px;
+            background-color: $darkblue;
+            width: 100%;
+            display: inline-block;
+        }
+        &:after {
+            margin-left: 2%;
+        }
+        &:before {
+            margin-right: 2%;
+        }
+    }
+    &__content {
+        width: 50%;
+        padding: 0 2rem;
+    }
+    &-text {
+        display: flex;
+        position: relative;
+        font-size: 1.3rem;
+        color: $darkblue
+    }
+    form {
+        padding: 0 2rem;
+        width: 50%;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__btn {
+        display: block;
+        border-radius: 3px;
+        border: none;
+        color: $white;
+        font-weight: 400;
+        background-color: $blue;
+        text-shadow: 0 0 1px $darkblue;
+        font-size: 1rem;
+        padding: .5rem;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+}
+
+#email-input {
+    padding: .5rem;
+    border: none;
+}

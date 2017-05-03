@@ -16,6 +16,12 @@
 <body>
     <header class="header">
         <div class="header__top-line">
+            <div class="header__contact-data">
+                <div class="contact-data">
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i>goldenwave@mail.ru</span>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i>+999-9999-9999</span>
+                </div>
+            </div>
             <div class="header__logo-wrapper">
                 <img src="img/GW-logo-gold.png" alt="golden wave">
             </div>
@@ -376,18 +382,26 @@
                 </div>
             </div>
         </div>
-        <div class="quote">
-            <div class="quote__content">
-                <div class="quote__border">
-                    <span>Не нужно ничего бояться. Сделайте шаг на встречу вашему счастью и новым эмоциям: ведь освоить серфинг не так сложно, как может показаться на первый взгляд, позвоните нам и мы вам это докажем!</span>
-                    <button class='quote__btn'>зделать звонок</button>
-                </div>
-            </div>
-        </div>
         <svg class='header-wave' viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 50 Q 25 150, 50 50" stroke="transparent" fill="#fff" />
+            <path d="M50 50 Q 75 -50, 100 50" stroke="transparent" fill="#48c9ef" />
+        </svg>
+    </section>
+    <section class="subscribe-now">
+        <svg class='header-wave' viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 50 Q 25 150, 50 50" stroke="transparent" fill="#48c9ef" />
             <path d="M50 50 Q 75 -50, 100 50" stroke="transparent" fill="#c9f5fe" />
         </svg>
+        <div class="quote">
+            <div class="quote__content">
+                <div class="quote__header"><span>Subscribe</span></div>
+                <span class='quote-text'>Oставь свою почту и мы пришлем все информацыю для новичков бесплатно, в которой ты получишь описание всех серф-спотов в Калифорнии</span>
+            </div>
+            <form action="#">
+                <input type="email" name="mail" id="email-input" placeholder='type your e-mail here...'>
+                <button type='submit' class='quote__btn'>subscribe</button>
+            </form>
+        </div>
     </section>
     <section class="section-clients">
         <article class="gallery">
@@ -417,31 +431,208 @@
             </div>
         </article>
         <article class="video v-frame">
-            <div class="video__header">video</div>
+            <div class="video__header"><span>video</span></div>
             <div class="relation">
                 <div class="relation__ration"></div>
                 <iframe class="relation__content" src="https://www.youtube.com/embed/b6hoBp7Hk-A?ecver=1" allowfullscreen></iframe>
             </div>
         </article>
         <article class="comments-wrapper">
-        <div class="comments-wrapper__header">
-        	<span>feedback</span>
-        </div>
-			<div class="owl-carousel client-comments">
-			    <div class="item"><h4>1</h4></div>
-			    <div class="item"><h4>2</h4></div>
-			    <div class="item"><h4>3</h4></div>
-			    <div class="item"><h4>4</h4></div>
-			    <div class="item"><h4>5</h4></div>
-			    <div class="item"><h4>6</h4></div>
-			    <div class="item"><h4>7</h4></div>
-			    <div class="item"><h4>8</h4></div>
-			    <div class="item"><h4>9</h4></div>
-			    <div class="item"><h4>10</h4></div>
-			    <div class="item"><h4>11</h4></div>
-			    <div class="item"><h4>12</h4></div>
-			</div>
+            <div class="comments-wrapper__header">
+                <span>feedback</span>
+            </div>
+            <div class="owl-carousel client-comments">
+                <div class="item">
+                    <div class="item__photo">
+                        <div class="person-photo"></div>
+                    </div>
+                    <div class="item__body">
+                        <span class="body-quote__icn"><i class="fa fa-quote-right"></i></span>
+                        <a href="#"><span class="item__name">Name Surname</span></a>
+                        <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vel, unde? Commodi dolorum cupiditate quos rerum quod voluptas ut esse ratione necessitatibus ad libero, laboriosam rem optio voluptatum, alias dolore.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__photo">
+                        <div class="person-photo"></div>
+                    </div>
+                    <div class="item__body">
+                        <span class="body-quote__icn"><i class="fa fa-quote-right"></i></span>
+                        <a href="#"><span class="item__name">Name Surname</span></a>
+                        <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vel, unde? Commodi dolorum cupiditate quos rerum quod voluptas ut esse ratione necessitatibus ad libero, laboriosam rem optio voluptatum, alias dolore.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__photo">
+                        <div class="person-photo"></div>
+                    </div>
+                    <div class="item__body">
+                        <span class="body-quote__icn"><i class="fa fa-quote-right"></i></span>
+                        <a href="#"><span class="item__name">Name Surname</span></a>
+                        <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vel, unde? Commodi dolorum cupiditate quos rerum quod voluptas ut esse ratione necessitatibus ad libero, laboriosam rem optio voluptatum, alias dolore.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__photo">
+                        <div class="person-photo"></div>
+                    </div>
+                    <div class="item__body">
+                        <span class="body-quote__icn"><i class="fa fa-quote-right"></i></span>
+                        <a href="#"><span class="item__name">Name Surname</span></a>
+                        <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vel, unde? Commodi dolorum cupiditate quos rerum quod voluptas ut esse ratione necessitatibus ad libero, laboriosam rem optio voluptatum, alias dolore.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__photo">
+                        <div class="person-photo"></div>
+                    </div>
+                    <div class="item__body">
+                        <span class="body-quote__icn"><i class="fa fa-quote-right"></i></span>
+                        <a href="#"><span class="item__name">Name Surname</span></a>
+                        <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vel, unde? Commodi dolorum cupiditate quos rerum quod voluptas ut esse ratione necessitatibus ad libero, laboriosam rem optio voluptatum, alias dolore.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__photo">
+                        <div class="person-photo"></div>
+                    </div>
+                    <div class="item__body">
+                        <span class="body-quote__icn"><i class="fa fa-quote-right"></i></span>
+                        <a href="#"><span class="item__name">Name Surname</span></a>
+                        <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vel, unde? Commodi dolorum cupiditate quos rerum quod voluptas ut esse ratione necessitatibus ad libero, laboriosam rem optio voluptatum, alias dolore.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__photo">
+                        <div class="person-photo"></div>
+                    </div>
+                    <div class="item__body">
+                        <span class="body-quote__icn"><i class="fa fa-quote-right"></i></span>
+                        <a href="#"><span class="item__name">Name Surname</span></a>
+                        <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vel, unde? Commodi dolorum cupiditate quos rerum quod voluptas ut esse ratione necessitatibus ad libero, laboriosam rem optio voluptatum, alias dolore.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__photo">
+                        <div class="person-photo"></div>
+                    </div>
+                    <div class="item__body">
+                        <span class="body-quote__icn"><i class="fa fa-quote-right"></i></span>
+                        <a href="#"><span class="item__name">Name Surname</span></a>
+                        <p class="item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, vel, unde? Commodi dolorum cupiditate quos rerum quod voluptas ut esse ratione necessitatibus ad libero, laboriosam rem optio voluptatum, alias dolore.</p>
+                    </div>
+                </div>
+            </div>
         </article>
+        <svg class='header-wave' viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 50 Q 25 150, 50 50" stroke="transparent" fill="#c9f5fe" />
+            <path d="M50 50 Q 75 -50, 100 50" stroke="transparent" fill="#fff" />
+        </svg>
+    </section>
+    <section class="our-team">
+        <div class="our-team__header"><span>our team</span></div>
+        <div class="our-team__wrapper">
+            <div class="our-team__person">
+                <div class="team-unit">
+                    <div class="team-unit__photo-wrapper">
+                        <div class="team-unit__photo"></div>
+                    </div>
+                    <div class="team-unit__body">
+                        <div class="team-unit__body-name">Name Surname</div>
+                        <div class="team-unit__body-job">PHOTOGRAPHER&CINEMATOGRAPHE</div>
+                        <div class="team-unit__body-quote">Capture your unique moments in motion</div>
+                    </div>
+                    <div class="team-unit__footer">
+                        <div class="team-unit__footer-icons">
+                            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-team__person">
+                <div class="team-unit">
+                    <div class="team-unit__photo-wrapper">
+                        <div class="team-unit__photo"></div>
+                    </div>
+                    <div class="team-unit__body">
+                        <div class="team-unit__body-name">Name Surname</div>
+                        <div class="team-unit__body-job">PHOTOGRAPHER&CINEMATOGRAPHE</div>
+                        <div class="team-unit__body-quote">Capture your unique moments in motion</div>
+                    </div>
+                    <div class="team-unit__footer">
+                        <div class="team-unit__footer-icons">
+                            <div class="team-unit__footer-icons">
+                                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-team__person">
+                <div class="team-unit">
+                    <div class="team-unit__photo-wrapper">
+                        <div class="team-unit__photo"></div>
+                    </div>
+                    <div class="team-unit__body">
+                        <div class="team-unit__body-name">Name Surname</div>
+                        <div class="team-unit__body-job">PHOTOGRAPHER&CINEMATOGRAPHE</div>
+                        <div class="team-unit__body-quote">Capture your unique moments in motion</div>
+                    </div>
+                    <div class="team-unit__footer">
+                        <div class="team-unit__footer-icons">
+                            <div class="team-unit__footer-icons">
+                                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="write-to-us">
+        <div class="write-to-us__wrapepr">
+            <div class="google-map-container">
+            <h2>google map</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-container__social-wrapper">
+                    <span class='contact-container__header'>Мы в соцеальных сетях</span>
+                    <div class="wrapper-icons">
+                        <div class="contact-container__social-item"><i class="fa fa-vk" aria-hidden="true"></i></div>
+                        <div class="contact-container__social-item"><i class="fa fa-twitter-square" aria-hidden="true"></i></div>
+                        <div class="contact-container__social-item"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        <div class="contact-container__social-item"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+                <div class="contact-container__send-msg-wrapper">
+                    <span class='contact-container__header'>Свяжись лично с первой русской школой серфинга в США.</span>
+                    <form action="#">
+                        <input type="text" name placeholder="Name" id="contact-container__name-input">
+                        <input type="email" name placeholder="Email" id="contact-container__email-input">
+                        <textarea name="message" id="contact-container__textarea" cols="30" rows="10" placeholder="Write msg here"></textarea>
+                        <input type="submit" value="send" class="contact-container__sbmt_button">
+                    </form>
+                    <span class='etc'>Обращайтесь по любым вопросам или предложениям будем рады помочь</span>
+                </div>
+                <div class="contact-container__other-way-wrapper">
+                    <span class='contact-container__header'>связаться с Нами</span>
+                    <div class="contact-container__other-way__item">
+                        <span class="icn"> <i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="number">+999-9999-9999</span>
+                    </div>
+                    <div class="contact-container__other-way__item">
+                        <span class="icn"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="mail">goldenwave@mail.ru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>

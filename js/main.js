@@ -27,16 +27,15 @@ $(document).ready(function() {
 
     //driwin svg line
     drawSvg.init();
-    $(window).resize(function(){
+    $(window).resize(function() {
         drawSvg.init();
     });
 
     //comments carusel
     $('.comments-wrapper > .owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
-        nav: true,
-        stagePadding: 60,
+        margin: 20,
+        stagePadding: 40,
         autoplay: true,
         autoplayTimeout: 8000,
         responsive: {
@@ -51,6 +50,8 @@ $(document).ready(function() {
             }
         }
     });
+
+
 
 });
 
@@ -95,7 +96,7 @@ var drawSvg = {
     scrollAnimation: function(event) {
         var d = $('#tl_container').get(0).getBoundingClientRect();
         if (d.top < (document.documentElement.clientHeight - 200)) {
-            var prc = (this.fullHeight / (d.bottom / 1.3)) - 1;
+            var prc = ((this.fullHeight - 50) / (d.bottom / 1.3)) - 1;
             var drawLength = this.pathLength * prc;
             $('#draw').css({
                 'stroke-dashoffset': (prc < 1) ? (this.pathLength - drawLength) : 0

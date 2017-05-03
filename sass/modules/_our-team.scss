@@ -1,0 +1,89 @@
+.our-team {
+    height: 600px;
+    padding: 2rem;
+    position: relative;
+    &__header {
+        display: block;
+        font-weight: 700;
+        color: $darkblue;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__wrapper {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        justify-content: space-around;
+    }
+    &__person {
+        width: 30%;
+        max-width: 300px;
+        display: flex;
+    }
+}
+
+.team-unit {
+    display: flex;
+    flex-direction: column;
+    background-color: $lightblue;
+    border-radius: 3px;
+    &__photo-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 2rem 1rem;
+    }
+    &__photo {
+        width: 11rem;
+        height: 11rem;
+        background-position: center;
+        background-size: cover;
+        border-radius: 100%;
+        border: 2px solid darken($lightblue, 10);
+        background-repeat: no-repeat;
+        background-image: url('../../img/photo-feedback.jpg');
+    }
+    &__body {
+    	display: flex;
+    	flex-direction: column;
+    	padding: 0 2rem .5rem;
+    }
+    &__body-name {
+    	border-top: 1px solid darken($lightblue, 10);
+    	text-align: center;
+    	display: block;
+    	margin: .5rem;
+    	padding-top: .3rem;
+    	font-size: 1.2rem;
+    	font-weight: 700;
+    	color: rgba($black, .8)
+    }
+    &__body-job {
+    	display: block;
+    	text-align: center;
+    	font-size: .7rem;
+    	color: lighten($black, 20);
+    	letter-spacing: 1px;
+    }
+    &__body-quote {
+    	display: block;
+    	text-align: center;
+    	color: rgba($black, .5);
+
+    }
+    &__footer {
+    	padding: 0 2rem .5rem;
+    }
+    &__footer-icons {
+    	display: flex;
+    	justify-content: center;
+    	a {
+    		display: block;
+    		font-size: 1.2rem;
+    		margin: 0 .4rem;
+    		color: rgba($black, .8)
+    	}
+    }
+}

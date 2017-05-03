@@ -1,0 +1,123 @@
+.write-to-us {
+    position: relative;
+    &__wrapepr {
+        display: flex;
+    }
+}
+
+.google-map-container {
+    width: 60%;
+    background-color: $sapfir;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        font-size: 4rem;
+        color: $darkblue;
+    }
+}
+
+.contact-container {
+	background-color: $lightblue;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    &__header {
+        display: block;
+        font-size: 1.4rem;
+        color: $darkblue;
+        font-weight: 700;
+        padding: .8rem 0;
+        text-transform: uppercase;
+    }
+    &__social-wrapper {
+    	border-bottom: 1px solid $sapfir;
+    	position: relative;
+		.wrapper-icons {
+			padding: 1rem 2rem;
+			display: flex;
+			justify-content: space-around;
+			color: darken($sapfir, 20);
+		}
+    }
+    &__social-item {
+		font-size: 1.8rem;
+    }
+    &__send-msg-wrapper {
+        .etc {
+            color: $darkblue;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        form {
+        	display: flex;
+        	flex-direction: column;
+        	
+        	input {
+        		margin: 1rem 0;
+        		font-size: 1.2rem;
+        		padding: .5rem;
+        		background-color: $sapfir;
+        		border: none;
+        	}
+        	::-webkit-input[type='text']-placeholder {
+        		
+        	}
+        	input[type='submit'] {
+        		color: $darkblue;
+        		text-transform: uppercase;
+        		letter-spacing: 1px;
+                font-weight: 700;
+        	}
+        	textarea {
+        		background-color: $sapfir;
+        		margin: 1rem 0;
+        		font-size: 1.2rem;
+        		padding: .5rem;
+        		border: none;
+        	}
+        }
+    }
+    &__other-way-wrapper {
+        margin-top: .5rem;
+        border-top: 1px solid $sapfir;
+    }
+    &__other-way__item {
+    	padding: .5rem 0;
+        span {
+            font-size: 1.3rem;
+            color: darken($sapfir, 30);
+        }
+        .icn {
+            margin-right: 1rem;
+        }
+        .mail {
+
+        }
+        .number {
+
+        }
+    }
+}
+
+#contact-container__textarea:-moz-placeholder,
+#contact-container__name-input:-moz-placeholder,
+#contact-container__email-input:-moz-placeholder {
+	color: $lightblue;
+}
+#contact-container__textarea::-moz-placeholder,
+#contact-container__name-input::-moz-placeholder,
+#contact-container__email-input::-moz-placeholder {
+	color: $lightblue;
+}
+#contact-container__textarea:-ms-input-placeholder,
+#contact-container__name-input:-ms-input-placeholder,
+#contact-container__email-input:-ms-input-placeholder {
+	color: $lightblue;
+}
+#contact-container__textarea::-webkit-input-placeholder,
+#contact-container__name-input::-webkit-input-placeholder,
+#contact-container__email-input::-webkit-input-placeholder {
+	color: $lightblue;
+}

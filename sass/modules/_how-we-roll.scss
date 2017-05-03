@@ -1,5 +1,5 @@
 .how-we-roll {
-    padding: 6rem 0;
+    padding: 6rem 0 2rem;
     position: relative;
     &__content {}
     &__header {
@@ -62,53 +62,7 @@
     }
 }
 
-.quote {
-    padding: 0 6rem 0;
-    position: relative;
-    &__border {
-        border-top: 1px dotted lighten($sapfir, 20);
-        border-bottom: 1px dotted lighten($sapfir, 20);
-    }
-    &__btn {
-        display: block;
-        margin: 1rem auto;
-        padding: .6rem .8rem;
-        align-self: flex-start;
-        border-radius: 10px;
-        border: none;
-        color: $white;
-        font-weight: 700;
-        background-color: $blue;
-        text-shadow: 0 0 1px $darkblue;
-        font-size: 1rem;
-        cursor: pointer;
-    }
-    &__content {
-        margin: auto;
-        width: 70%;
-        padding: 1rem 2rem;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: $darkblue;
-        background-color: $sapfir;
-        position: relative;
-        span {
-            padding: .5rem 0;
-            display: block;
-        }
-        &:after {
-            content: open-quote;
-            font-size: 3rem;
-            color: $darkblue;
-            position: absolute;
-            top: -1rem;
-            left: 5px;
-            opacity: .5;
-            font-family: $second-font;
-        }
-    }
-}
+
 
 //Svg styling
 svg#svg-event-line {
